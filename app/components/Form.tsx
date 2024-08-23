@@ -18,7 +18,7 @@ export const MainForm = () => {
 
     return (
         <Form {...form}>
-            <form style={{ backgroundImage: `` }} className="p-4 rounded-md flex flex-col gap-8 bg-white/90 lg:w-[400px]">
+            <form style={{ backgroundImage: `` }} className="p-4 rounded-md flex flex-col gap-8 bg-white/90 min-w-[300px] min-[400px]:min-w-[390px] xl:w-[1100px]">
                 <FormField
                     control={form.control}
                     name="name"
