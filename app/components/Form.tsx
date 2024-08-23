@@ -18,7 +18,7 @@ export const MainForm = () => {
 
     return (
         <Form {...form}>
-            <form style={{ backgroundImage: `` }} className="p-4 rounded-md flex flex-col gap-8 bg-white/90 lg:w-[600px]">
+            <form style={{ backgroundImage: `` }} className="p-4 rounded-md flex flex-col gap-8 bg-white/90 lg:w-[400px]">
                 <FormField
                     control={form.control}
                     name="name"
@@ -38,9 +38,9 @@ export const MainForm = () => {
                     name="addres"
                     render={({ field }) => (
                         <FormItem>
-                            <FormLabel className="font-bold text-md">Endereço</FormLabel>
+                            <FormLabel className="font-bold text-md">Email</FormLabel>
                             <FormControl>
-                                <Input placeholder="Digite seu endereço" {...field} />
+                                <Input placeholder="Digite seu email" {...field} />
                             </FormControl>
 
                             <FormMessage />
@@ -52,16 +52,16 @@ export const MainForm = () => {
                     name="username"
                     render={({ field }) => (
                         <FormItem>
-                            <FormLabel className="font-bold text-md">Email</FormLabel>
+                            <FormLabel className="font-bold text-md">Telefone</FormLabel>
                             <FormControl>
-                                <Input placeholder="Digite seu email" {...field} />
+                                <Input placeholder="Digite seu telefone" {...field} />
                             </FormControl>
 
                             <FormMessage />
                         </FormItem>
                     )}
                 />
-                <Button type="submit" className="bg-red-600">Enviar</Button>
+                <Button type="submit" className="bg-red-600">Cadastrar</Button>
             </form>
         </Form>
     )
