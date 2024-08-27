@@ -9,7 +9,7 @@ export const Footer = () => {
                 <div>Termos e Condições</div>
             </div>
             <div className="flex gap-4 items-center">
-                <Image src="/assets/logo-footer.png" width={30} height={10} alt="Logo-footer" />
+                <Image src="/assets/logo-footer.png" width={30} height={30} alt="Logo-footer" />
                 <div className="text-sm">Conexão Solidária</div>
             </div>
         </footer>
