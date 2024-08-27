@@ -1,17 +1,26 @@
 import { Bungee_Shade } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 
 const bungee = Bungee_Shade({
-  subsets: ["latin"],
-  weight: ["400"]
+    subsets: ["latin"],
+    weight: ["400"]
 });
 
 export const Header = () => {
 
     return (
-        <header className="w-full h-24 px-4 flex justify-between items-center border-b border-red-300 fixed bg-white md:px-24 md:h-32">
-            <Image src="/assets/logo.jpeg" width={80} height={120} alt="Logo" />
-            <div className={`text-[26px] text-center font-bold w-48 text-red-600 ${bungee.className} md:text-[40px] min-[400px]:text-[32px] min-[400px]:m-auto xl:text-[60px] lg:w-[600px] xl:w-[800px]`}>Conexão Solidária</div>
+        <header className="w-full h-24 flex justify-between items-center gap-8 fixed bg-[#F6EFEE] md:px-24 md:h-32">
+            <div>
+                <Image src="/assets/logo-header.png" width={200} height={200} alt="Logo" />
+            </div>
+            <nav className="flex-1">
+                <div className=" flex justify-around items-center text-xl">
+                    <Link href="/doar">Doar</Link>
+                    <Link href="/doar">Quem Somos</Link>
+                    <Link href="/doar">Contato</Link>
+                </div>
+            </nav>
         </header>
     )
 }
