@@ -13,9 +13,9 @@ export const Header = () => {
             </div>
             <nav className="flex-1">
                 <div className=" flex justify-around items-center text-xl">
-                    <Link href="/doar" className="hover:bg-[#57CC99] p-4 rounded-full">Doar</Link>
-                    <Link href="/sobre" className="hover:bg-[#57CC99] p-4 rounded-full">Quem Somos</Link>
-                    <Link href="/contato" className="hover:bg-[#57CC99] p-4 rounded-full">Contato</Link>
+                    <Link href="/doar" className="hover:underline p-4 rounded-full">Doar</Link>
+                    <Link href="/sobre" className="hover:underline p-4 rounded-full">Quem Somos</Link>
+                    <Link href="/contato" className="hover:underline p-4 rounded-full">Contato</Link>
                 </div>
             </nav>
         </header>
