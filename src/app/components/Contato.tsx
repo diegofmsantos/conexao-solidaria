@@ -36,32 +36,19 @@ export const Contato = () => {
     return (
         <div className="flex flex-col justify-center py-10 items-center px-4 min-h-screen w-screen bg-[#57CC99] md:px-10 xl:justify-around xl:flex-row">
             <div className="max-w-[700px] flex flex-col gap-4 mb-8 xl:gap-10">
-                <div className="text-4xl text-white font-bold text-center md:text-5xl">DESEJA SER UM AGENTE PARA A MUDANÇA NO SEU BAIRRO?</div>
+                <div className="text-4xl text-white font-bold text-center  leading-snug md:text-5xl">DESEJA SER UM AGENTE PARA A MUDANÇA NO SEU BAIRRO?</div>
                 <div className="text-2xl text-white text-center md:text-3xl">Cadastre-se para receber novidades sobre nosso projeto de ações solidárias, e ajude  a fazer a diferença na sua comunidade!</div>
             </div>
             <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 p-4 border rounded-md flex flex-col gap-8 bg-[#F6EFEE] w-72 max-w-[700px] min-[400px]:min-w-[390px] xl:w-[500px]">
+                    <div className="text-2xl font-bold text-[#57CC99] md:text-4xl">DADOS PESSOAIS</div>
                     <FormField
                         control={form.control}
                         name="nome"
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel className="font-bold text-md">Nome</FormLabel>
                                 <FormControl>
-                                    <Input placeholder="Digite seu nome" {...field} />
-                                </FormControl>
-                                <FormMessage />
-                            </FormItem>
-                        )}
-                    />
-                    <FormField
-                        control={form.control}
-                        name="email"
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel className="font-bold text-md">E-mail</FormLabel>
-                                <FormControl>
-                                    <Input placeholder="Digite seu email" {...field} />
+                                    <Input placeholder="Nome" {...field} />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
@@ -73,17 +60,28 @@ export const Contato = () => {
                         render={({ field }) => {
                             return (
                                 <FormItem>
-                                    <FormLabel className="font-bold text-md">Telefone</FormLabel>
                                     <FormControl>
                                         <Input
-                                            placeholder="Digite seu telefone" {...field} />
+                                            placeholder="Telefone" {...field} />
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
                             )
                         }}
                     />
-                    <Button type="submit" className="bg-[#DB2763] text-xl font-bold h-12">Cadastrar</Button>
+                    <FormField
+                        control={form.control}
+                        name="email"
+                        render={({ field }) => (
+                            <FormItem>
+                                <FormControl>
+                                    <Input placeholder="E-mail" {...field} />
+                                </FormControl>
+                                <FormMessage />
+                            </FormItem>
+                        )}
+                    />
+                    <Button type="submit" className="bg-[#DB2763] text-3xl font-bold m-auto rounded-3xl w-40 h-14">Enviar</Button>
                 </form>
             </Form>
         </div>

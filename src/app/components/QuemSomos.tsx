@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const QuemSomos = () => {
     return (
-        <div className="w-screen min-h-screen flex flex-col gap-10 justify-between items-center px-4 py-10 bg-[#57CC99] xl:flex-row xl:px-20 md:px-14">
+        <div className="w-screen min-h-screen flex flex-col gap-14 min-[375px]:gap-0 justify-between items-center px-4 py-10 bg-[#57CC99] xl:flex-row xl:px-20 md:px-14">
             <div className="max-w-[670px] min-h-[500px] flex justify-center items-baseline leading-snug text-xl text-white font-bold text-justify break-words hyphens-auto md:text-2xl xl:text-3xl">
                 Com o firme compromisso de conectar voluntários, organizações e beneficiários, a equipe do curso de
                 Programador de Sistemas do Senac-PE criou este projeto para oferecer maior visibilidade às ações solidárias.
