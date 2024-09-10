@@ -17,8 +17,8 @@ export const Doar = () => {
     ];
 
     return (
-        <div className="w-screen min-h-screen flex flex-col justify-start gap-10 xl:gap-20">
-            <div className="w-full h-60 relative">
+        <div className="w-screen min-h-screen flex flex-col justify-start gap-10">
+            <div className="w-full h-72 relative 2xl:h-96">
                 <Image
                     src="/assets/bg-doar.png"
                     layout="fill"
@@ -32,14 +32,14 @@ export const Doar = () => {
                     <div
                         key={index}
                         onClick={() => handleSelected(index)}
-                        className={`w-72 h-60 rounded-3xl text-[#DB2763] border border-gray-400 flex flex-col justify-center items-start p-8 cursor-pointer md:w-80 md:h-72 ${
+                        className={`w-72 h-60 rounded-3xl text-[#DB2763] border border-gray-400 flex flex-col justify-center items-start p-8 cursor-pointer md:w-72 md:h-64 ${
                             selectedIndex === index ? 'bg-[#DB2763]' : 'bg-white'
                         } ${
                             selectedIndex === index ? 'text-white' : 'text-[#DB2763]'
                         }`}
                     >
                         <div className="text-2xl flex justify-center items-center p-2 md:text-3xl">{div.subtitle}</div>
-                        <div className="text-4xl flex justify-center items-center p-2 md:text-5xl">{div.title}</div>
+                        <div className="text-4xl flex justify-center items-center p-2 md:text-[40px]">{div.title}</div>
                     </div>
                 ))}
             </section>

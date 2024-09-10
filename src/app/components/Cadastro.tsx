@@ -34,7 +34,7 @@ export const Cadastro = () => {
     }
 
     return (
-        <div className="flex flex-col justify-center py-10 items-center px-4 w-screen bg-[#57CC99] md:px-10 xl:justify-around xl:flex-row">
+        <div className="flex flex-col justify-center py-10 items-center px-4 w-screen h-screen bg-[#57CC99] md:px-10 xl:justify-around xl:flex-row">
             <div className="max-w-[700px] flex flex-col gap-4 mb-8 xl:gap-10">
                 <div className="text-4xl text-white font-bold text-center  leading-snug md:text-5xl">DESEJA SER UM AGENTE PARA A MUDANÇA NO SEU BAIRRO?</div>
                 <div className="text-2xl text-white text-center md:text-3xl">Cadastre-se para receber novidades sobre nosso projeto de ações solidárias, e ajude  a fazer a diferença na sua comunidade!</div>
