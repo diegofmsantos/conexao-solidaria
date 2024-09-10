@@ -18,7 +18,7 @@ export const Doar = () => {
 
     return (
         <div className="w-screen min-h-screen flex flex-col justify-start gap-10 xl:gap-20">
-            <div className="w-full h-96 relative">
+            <div className="w-full h-60 relative">
                 <Image
                     src="/assets/bg-doar.png"
                     layout="fill"

@@ -7,9 +7,9 @@ import { useState } from "react";
 interface HeaderProps {
   scrollToSection: (ref: React.RefObject<HTMLDivElement>) => void;
   refs: {
-    quemSomosRef: React.RefObject<HTMLDivElement>;
     doarRef: React.RefObject<HTMLDivElement>;
-    contatoRef: React.RefObject<HTMLDivElement>;
+    quemSomosRef: React.RefObject<HTMLDivElement>;
+    cadastroRef: React.RefObject<HTMLDivElement>;
   };
 }
 
@@ -31,22 +31,22 @@ export const Header = ({ scrollToSection, refs }: HeaderProps) => {
       <nav className="hidden flex-1 justify-center md:flex">
         <div className="flex justify-center items-center gap-20 text-xl">
           <button
-            onClick={() => handleClick("quemSomos", refs.quemSomosRef)}
-            className={`p-4 rounded-full ${activeButton === "quemSomos" ? "underline" : ""}`}
-          >
-            Quem Somos
-          </button>
-          <button
             onClick={() => handleClick("doar", refs.doarRef)}
             className={`p-4 rounded-full ${activeButton === "doar" ? "underline" : ""}`}
           >
             Doar
           </button>
           <button
-            onClick={() => handleClick("contato", refs.contatoRef)}
-            className={`p-4 rounded-full ${activeButton === "contato" ? "underline" : ""}`}
+            onClick={() => handleClick("quemSomos", refs.quemSomosRef)}
+            className={`p-4 rounded-full ${activeButton === "quemSomos" ? "underline" : ""}`}
           >
-            Contato
+            Quem Somos
+          </button>
+          <button
+            onClick={() => handleClick("cadastro", refs.cadastroRef)}
+            className={`p-4 rounded-full ${activeButton === "cadastro" ? "underline" : ""}`}
+          >
+            Cadastro
           </button>
         </div>
       </nav>
